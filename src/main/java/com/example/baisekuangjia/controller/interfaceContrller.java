@@ -8,6 +8,6 @@ public class interfaceContrller {
     @RequestMapping("/index")
     public String index()
     {
-        return "hh";
+        return "改了";
     }
 }
