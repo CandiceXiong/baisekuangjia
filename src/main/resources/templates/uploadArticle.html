@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html class="no-js " lang="en">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
-    <title>添加用户信息</title>
+    <title>上传文章</title>
     <!-- 网站图标-->
     <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
     <!-- bootstrap.min.css-->
     <link rel="stylesheet" href="../static/plugins/bootstrap/css/bootstrap.min.css">
-    <!--food-->
-    <link rel="stylesheet" href="../static/plugins/footable-bootstrap/css/footable.bootstrap.min.css">
-    <link rel="stylesheet" href="../static/plugins/footable-bootstrap/css/footable.standalone.min.css">
-    <link rel="stylesheet" href="../static/css/main.css">
+     <link rel="stylesheet" href="../static/css/main.css">
     <link rel="stylesheet" href="../static/css/color_skins.css">
+
+
+
 </head>
+
+
 <!--紫色主题-->
 <body class="theme-purple">
 <!-- 页面加载-->
@@ -120,19 +123,19 @@
         </div>
     </div>
     <!-- 结束 -->
-    <!---添加用户提交表单开始-->
-    <!-- Basic Validation -->
+<div class="container-fluid">
+    <!-- CKEditor -->
     <div class="row clearfix">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="card">
                 <div class="header">
-                    <h2><strong>Basic</strong> Validation</h2>
+                    <h2> <strong>CKEditor</strong> <small>CKEditor is a ready-for-use HTML text editor designed to simplify web content creation. Taken from <a href="http://ckeditor.com/" target="_blank">ckeditor.com</a></small> </h2>
                     <ul class="header-dropdown">
                         <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
                             <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a href="javascript:void(0);">导出</a></li>
-                                <li><a href="javascript:void(0);">编辑</a></li>
-                                <li><a href="javascript:void(0);">删除</a></li>
+                                <li><a href="javascript:void(0);">Action</a></li>
+                                <li><a href="javascript:void(0);">Another action</a></li>
+                                <li><a href="javascript:void(0);">Something else</a></li>
                             </ul>
                         </li>
                         <li class="remove">
@@ -141,40 +144,32 @@
                     </ul>
                 </div>
                 <div class="body">
-                    <form id="form_validation" method="POST">
-                        <div class="form-group form-float">
-                            <input type="text" class="form-control" placeholder="Name" name="name" required>
-                        </div>
-                        <div class="form-group form-float">
-                            <input type="text" class="form-control" placeholder="Surname" name="surname" required>
-                        </div>
-                        <div class="form-group form-float">
-                            <input type="email" class="form-control" placeholder="Email" name="email" required>
-                        </div>
-                        <div class="form-group form-float">
-                            <input type="password" class="form-control" placeholder="Password" name="password" required>
-                        </div>
-                        <div class="form-group">
-                            <div class="checkbox">
-                                <input id="checkbox" type="checkbox">
-                                <label for="checkbox">I have read and accept the terms</label>
-                            </div>
-                        </div>
-                        <button class="btn btn-raised btn-primary btn-round waves-effect" type="submit">SUBMIT</button>
-                    </form>
+                        <textarea id="ckeditor">
+                                <h2>WYSIWYG Editor</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper sapien non nisl facilisis bibendum in quis tellus. Duis in urna bibendum turpis pretium fringilla. Aenean neque velit, porta eget mattis ac, imperdiet quis nisi. Donec non dui et tortor vulputate luctus. Praesent consequat rhoncus velit, ut molestie arcu venenatis sodales.</p>
+                                <h3>Lacinia</h3>
+                                <ul>
+                                    <li>Suspendisse tincidunt urna ut velit ullamcorper fermentum.</li>
+                                    <li>Nullam mattis sodales lacus, in gravida sem auctor at.</li>
+                                    <li>Praesent non lacinia mi.</li>
+                                    <li>Mauris a ante neque.</li>
+                                    <li>Aenean ut magna lobortis nunc feugiat sagittis.</li>
+                                </ul>
+                                <h3>Pellentesque adipiscing</h3>
+                                <p>Maecenas quis ante ante. Nunc adipiscing rhoncus rutrum. Pellentesque adipiscing urna mi, ut tempus lacus ultrices ac. Pellentesque sodales, libero et mollis interdum, dui odio vestibulum dolor, eu pellentesque nisl nibh quis nunc. Sed porttitor leo adipiscing venenatis vehicula. Aenean quis viverra enim. Praesent porttitor ut ipsum id ornare.</p>
+                            </textarea>
                 </div>
             </div>
         </div>
     </div>
+    <!-- #END# CKEditor -->
+</div>
 </section>
-<!-- Jquery 核心 Js -->
-<!-- 脚本插件 Js -->
+
 <script src="../static/bundles/libscripts.bundle.js"></script>
 <script src="../static/bundles/vendorscripts.bundle.js"></script>
 <script src="../static/bundles/mainscripts.bundle.js"></script>
-<script src="../static/bundles/footable.bundle.js"></script>
-<script src="../static/js/pages/tables/footable.js"></script>
-
-
+<script src="../static/js/pages/forms/editors.js"></script>
+<script src="../static/plugins/ckeditor/ckeditor.js"></script>
 </body>
 </html>
